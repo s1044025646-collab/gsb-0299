@@ -1,0 +1,17 @@
+{
+  "name": "paren-ranker",
+  "version": "1.0.0",
+  "description": "平衡括号序列计数与排名/反排名后端（TypeScript + Node.js + SQLite）",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/server.js",
+    "cli": "npm run build && node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
